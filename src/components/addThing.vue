@@ -4,7 +4,7 @@
       <input type="text" v-model="newTodo" @keypress.enter="addTodo">
     </div>
     <ol class="todos">
-      <li v-for ='todo in todoList' >
+      <li v-for ='todo in todoList' :key='todo'>
         <input type="checkbox" v-model="todo.done">
         {{ todoList }}
         <span v-if ='todo.done'>已完成</span>
