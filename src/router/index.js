@@ -8,12 +8,12 @@ Vue.use(Router)
 export default new Router({
   routes: [
      {
-      path: '/',
+      path: '/calendar',
       name: 'calendar',
       component: calendar
     },
     {
-      path: '/addThing',
+      path: '/',
       name: 'addThing',
       component: addThing
     }
